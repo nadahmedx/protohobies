@@ -1,0 +1,52 @@
+input { display: none; }                
+input + label { display: inline-block }
+input ~ .tab { display: none }  
+#tab1:checked ~ .tab.content1,
+#tab2:checked ~ .tab.content2{ display: block; }
+input + label {   
+  border: 1px solid #999;
+  background: #EEE;
+  padding: 4px 12px;
+  border-radius: 4px 4px 0 0;
+  position: relative;
+  top: 1px;
+}
+input:checked + label {
+  background: #FFF;
+  border-bottom: 1px solid transparent;
+}
+input ~ .tab {          
+  border-top: 1px solid #999;
+  padding: 12px;
+}
+.inner{
+    text-align: center;
+    width: 200px;
+    border-radius: 50% 
+  }
+#s1{
+    background: linear-gradient(blue,green,yellow);
+  opacity: 1;
+    vertical-align: middle;
+  }
+.ibox{
+    height:3px;
+    width: 500px;
+    background-color:black;
+    margin:6px auto;
+   }
+#s2{
+    background: linear-gradient(yellow,green,blue);
+  opacity: 1;
+    vertical-align: middle;
+  }
+#s3{
+    background: linear-gradient(blue,green,yellow);
+  opacity: 1;
+    vertical-align: middle;
+  }  
+#s4{
+    background: linear-gradient(yellow,green,blue);
+  opacity: 1;
+    vertical-align: middle;
+  }
